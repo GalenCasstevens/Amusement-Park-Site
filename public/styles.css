@@ -1,0 +1,38 @@
+body {
+    font-family: Teko;
+    font-size: 1.6em;
+    background-color: greenyellow;
+}
+textarea.form-control {
+    font-size: 24px;
+}
+.showNameImg {
+    text-align: center;
+}
+div.inlineBlock {
+    display: inline-block;
+}
+.navbar-brand {
+    font-size: 1.3em;
+}
+.nav-link {
+    font-size: .8em;
+}
+ul.list-group {
+    margin-top: 25px;
+}
+.jumbotron {
+    margin-top: 25px;
+}
+img {
+    width: 100%;
+}
+.show {
+    font-size: 1.1em;
+}
+a.btn.editButton {
+    background-color: #990099;
+}
+.deleteForm {
+    display: inline;
+}

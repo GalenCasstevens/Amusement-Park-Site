@@ -1,0 +1,35 @@
+<% include partials/header %>
+    <div class="container">
+        <header class="jumbotron">
+            <div class="container">
+                <h1>Welcome to NC Amusement Parks!</h1>
+                <p>View amusement parks that are in driving distance from North Carolina!</p>
+                <p>
+                    <a class="btn btn-primary btn-lg" href="/amusementparks/new">Add New Amusement Park</a>
+                </p>
+            </div>
+        </header>
+
+        <div class="row">
+            <div class="col-lg-12">
+                Most Popular Amusement Parks!
+            </div>
+        </div>
+
+        <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+            <% parks.forEach(function(park) { %>
+            <div class="col-md-3 col-sm-6">
+                <div class="img-thumbnail">
+                    <img src="<%= park.imageUrl %>" alt="">
+                    <div class="caption">
+                        <h4><%= park.name %></h4>
+                    </div>
+                    <p>
+                        <a class="btn btn-primary" href="/amusementparks/<%= park._id %>">More Info</a>
+                    </p>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+    </div>
+<% include partials/footer %>

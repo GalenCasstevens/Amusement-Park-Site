@@ -1,0 +1,21 @@
+<% include partials/header %>
+
+<div class="container">
+    <ul class="list-group">
+        <div class="container">
+            <li class="list-group-item">
+                <div class="showNameImg">
+                    <h2><%= park.name %></h2>
+                    <img class="img-thumbnail" src="<%= park.imageUrl %>">
+                </div>
+                <p><%= park.description %></p>
+                <a class="btn btn-primary editButton show" href="/amusementparks/<%= park._id %>/edit">Edit</a>
+                <form class="deleteForm" id="delete" action="/amusementparks/<%= park._id %>?_method=DELETE" method="POST">
+                    <button class="btn btn-danger show">Delete</button>
+                </form>
+            </li>
+        </div>
+    </ul>
+</div>
+
+<% include partials/footer %>
